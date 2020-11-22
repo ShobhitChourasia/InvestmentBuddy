@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC1F3096E8BBCF83AFEA7498 /* Pods_InvestmentBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705A177F7481C6CDFFEDB5A1 /* Pods_InvestmentBuddy.framework */; };
 		EE0064D22569A932005BF9F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064D12569A932005BF9F0 /* AppDelegate.swift */; };
 		EE0064D42569A932005BF9F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064D32569A932005BF9F0 /* SceneDelegate.swift */; };
 		EE0064DB2569A934005BF9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0064DA2569A934005BF9F0 /* Assets.xcassets */; };
@@ -26,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F83823D25050ACEA6A67203 /* Pods-InvestmentBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentBuddy.release.xcconfig"; path = "Target Support Files/Pods-InvestmentBuddy/Pods-InvestmentBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		705A177F7481C6CDFFEDB5A1 /* Pods_InvestmentBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvestmentBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9226F3A603FA4CD189F5CF29 /* Pods-InvestmentBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestmentBuddy.debug.xcconfig"; path = "Target Support Files/Pods-InvestmentBuddy/Pods-InvestmentBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		EE0064CE2569A932005BF9F0 /* InvestmentBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestmentBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0064D12569A932005BF9F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE0064D32569A932005BF9F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,17 +55,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1F3096E8BBCF83AFEA7498 /* Pods_InvestmentBuddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DAD5155493AB4AA1C699D14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9226F3A603FA4CD189F5CF29 /* Pods-InvestmentBuddy.debug.xcconfig */,
+				5F83823D25050ACEA6A67203 /* Pods-InvestmentBuddy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE29C4000278A853572655EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				705A177F7481C6CDFFEDB5A1 /* Pods_InvestmentBuddy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE0064C52569A932005BF9F0 = {
 			isa = PBXGroup;
 			children = (
 				EE0064D02569A932005BF9F0 /* InvestmentBuddy */,
 				EE0064CF2569A932005BF9F0 /* Products */,
+				7DAD5155493AB4AA1C699D14 /* Pods */,
+				CE29C4000278A853572655EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE0064E22569A934005BF9F0 /* Build configuration list for PBXNativeTarget "InvestmentBuddy" */;
 			buildPhases = (
+				BF949D103CC7EADA5753E2F8 /* [CP] Check Pods Manifest.lock */,
 				EE0064CA2569A932005BF9F0 /* Sources */,
 				EE0064CB2569A932005BF9F0 /* Frameworks */,
 				EE0064CC2569A932005BF9F0 /* Resources */,
+				597AE3D9DCED57DD8D1E30C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +268,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		597AE3D9DCED57DD8D1E30C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvestmentBuddy/Pods-InvestmentBuddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvestmentBuddy/Pods-InvestmentBuddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InvestmentBuddy/Pods-InvestmentBuddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF949D103CC7EADA5753E2F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvestmentBuddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE0064CA2569A932005BF9F0 /* Sources */ = {
@@ -394,6 +463,7 @@
 		};
 		EE0064E32569A934005BF9F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9226F3A603FA4CD189F5CF29 /* Pods-InvestmentBuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -412,6 +482,7 @@
 		};
 		EE0064E42569A934005BF9F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F83823D25050ACEA6A67203 /* Pods-InvestmentBuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

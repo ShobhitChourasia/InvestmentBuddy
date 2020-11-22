@@ -9,10 +9,13 @@
 import UIKit
 
 class ExploreViewController: CustomViewController<ExploreView> {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBarController?.navigationItem.title = "Explore"
+        
+        addChild(customView.pagingView)
+        customView.pagingView.didMove(toParent: self)
     }
-
+    
 }
