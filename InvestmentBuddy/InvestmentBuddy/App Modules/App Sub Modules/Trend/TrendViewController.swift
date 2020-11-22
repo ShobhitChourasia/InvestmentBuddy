@@ -1,5 +1,5 @@
 //
-//  PortfolioViewController.swift
+//  TrendViewController.swift
 //  InvestmentBuddy
 //
 //  Created by Shobhit on 22/11/20.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class PortfolioViewController: UIViewController {
+class TrendViewController: CustomViewController<TrendView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple
+        tabBarController?.navigationItem.title = "Trend"
     }
     
 }

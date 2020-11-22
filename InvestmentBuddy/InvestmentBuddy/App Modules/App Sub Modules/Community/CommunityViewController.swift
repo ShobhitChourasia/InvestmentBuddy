@@ -8,11 +8,11 @@
 
 import UIKit
 
-class CommunityViewController: UIViewController {
+class CommunityViewController: CustomViewController<CommunityView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+        tabBarController?.navigationItem.title = "Community"
     }
 
 }

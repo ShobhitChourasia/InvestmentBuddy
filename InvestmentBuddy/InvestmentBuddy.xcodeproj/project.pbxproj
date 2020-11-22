@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EE0064D22569A932005BF9F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064D12569A932005BF9F0 /* AppDelegate.swift */; };
 		EE0064D42569A932005BF9F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064D32569A932005BF9F0 /* SceneDelegate.swift */; };
-		EE0064D62569A932005BF9F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064D52569A932005BF9F0 /* ViewController.swift */; };
 		EE0064DB2569A934005BF9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0064DA2569A934005BF9F0 /* Assets.xcassets */; };
 		EE0064DE2569A934005BF9F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0064DC2569A934005BF9F0 /* LaunchScreen.storyboard */; };
 		EE0064E8256A65A3005BF9F0 /* UIViewController+CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064E7256A65A3005BF9F0 /* UIViewController+CustomView.swift */; };
@@ -18,14 +17,18 @@
 		EE0064F6256A6810005BF9F0 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064F5256A6810005BF9F0 /* ExploreViewController.swift */; };
 		EE0064F8256A6818005BF9F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064F7256A6818005BF9F0 /* HomeViewController.swift */; };
 		EE0064FA256A6820005BF9F0 /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064F9256A6820005BF9F0 /* InsightsViewController.swift */; };
-		EE0064FC256A682A005BF9F0 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064FB256A682A005BF9F0 /* PortfolioViewController.swift */; };
+		EE0064FC256A682A005BF9F0 /* TrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064FB256A682A005BF9F0 /* TrendViewController.swift */; };
+		EED740AA256A766C0063765C /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740A9256A766C0063765C /* CommunityView.swift */; };
+		EED740AC256A767F0063765C /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740AB256A767F0063765C /* ExploreView.swift */; };
+		EED740AE256A76880063765C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740AD256A76880063765C /* HomeView.swift */; };
+		EED740B0256A76940063765C /* InsightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740AF256A76940063765C /* InsightView.swift */; };
+		EED740B2256A76A00063765C /* TrendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740B1256A76A00063765C /* TrendView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE0064CE2569A932005BF9F0 /* InvestmentBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestmentBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0064D12569A932005BF9F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE0064D32569A932005BF9F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE0064D52569A932005BF9F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE0064DA2569A934005BF9F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE0064DD2569A934005BF9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE0064DF2569A934005BF9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,7 +38,12 @@
 		EE0064F5256A6810005BF9F0 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		EE0064F7256A6818005BF9F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EE0064F9256A6820005BF9F0 /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
-		EE0064FB256A682A005BF9F0 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		EE0064FB256A682A005BF9F0 /* TrendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendViewController.swift; sourceTree = "<group>"; };
+		EED740A9256A766C0063765C /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		EED740AB256A767F0063765C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		EED740AD256A76880063765C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EED740AF256A76940063765C /* InsightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightView.swift; sourceTree = "<group>"; };
+		EED740B1256A76A00063765C /* TrendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +80,6 @@
 				EE0064E5256A6568005BF9F0 /* Utility */,
 				EE0064D12569A932005BF9F0 /* AppDelegate.swift */,
 				EE0064D32569A932005BF9F0 /* SceneDelegate.swift */,
-				EE0064D52569A932005BF9F0 /* ViewController.swift */,
 				EE0064DA2569A934005BF9F0 /* Assets.xcassets */,
 				EE0064DC2569A934005BF9F0 /* LaunchScreen.storyboard */,
 				EE0064DF2569A934005BF9F0 /* Info.plist */,
@@ -120,7 +127,7 @@
 				EE0064EF256A672A005BF9F0 /* Explore */,
 				EE0064EE256A671E005BF9F0 /* Home */,
 				EE0064F1256A673A005BF9F0 /* Insights */,
-				EE0064F0256A6733005BF9F0 /* Portfolio */,
+				EE0064F0256A6733005BF9F0 /* Trend */,
 			);
 			path = "App Sub Modules";
 			sourceTree = "<group>";
@@ -129,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				EE0064F7256A6818005BF9F0 /* HomeViewController.swift */,
+				EED740AD256A76880063765C /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -137,22 +145,25 @@
 			isa = PBXGroup;
 			children = (
 				EE0064F5256A6810005BF9F0 /* ExploreViewController.swift */,
+				EED740AB256A767F0063765C /* ExploreView.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
 		};
-		EE0064F0256A6733005BF9F0 /* Portfolio */ = {
+		EE0064F0256A6733005BF9F0 /* Trend */ = {
 			isa = PBXGroup;
 			children = (
-				EE0064FB256A682A005BF9F0 /* PortfolioViewController.swift */,
+				EE0064FB256A682A005BF9F0 /* TrendViewController.swift */,
+				EED740B1256A76A00063765C /* TrendView.swift */,
 			);
-			path = Portfolio;
+			path = Trend;
 			sourceTree = "<group>";
 		};
 		EE0064F1256A673A005BF9F0 /* Insights */ = {
 			isa = PBXGroup;
 			children = (
 				EE0064F9256A6820005BF9F0 /* InsightsViewController.swift */,
+				EED740AF256A76940063765C /* InsightView.swift */,
 			);
 			path = Insights;
 			sourceTree = "<group>";
@@ -161,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				EE0064F3256A6807005BF9F0 /* CommunityViewController.swift */,
+				EED740A9256A766C0063765C /* CommunityView.swift */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -235,8 +247,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0064D62569A932005BF9F0 /* ViewController.swift in Sources */,
-				EE0064FC256A682A005BF9F0 /* PortfolioViewController.swift in Sources */,
+				EED740AC256A767F0063765C /* ExploreView.swift in Sources */,
+				EE0064FC256A682A005BF9F0 /* TrendViewController.swift in Sources */,
 				EE0064EB256A6654005BF9F0 /* RootTabBarController.swift in Sources */,
 				EE0064F4256A6807005BF9F0 /* CommunityViewController.swift in Sources */,
 				EE0064F8256A6818005BF9F0 /* HomeViewController.swift in Sources */,
@@ -244,6 +256,10 @@
 				EE0064FA256A6820005BF9F0 /* InsightsViewController.swift in Sources */,
 				EE0064E8256A65A3005BF9F0 /* UIViewController+CustomView.swift in Sources */,
 				EE0064F6256A6810005BF9F0 /* ExploreViewController.swift in Sources */,
+				EED740AE256A76880063765C /* HomeView.swift in Sources */,
+				EED740B0256A76940063765C /* InsightView.swift in Sources */,
+				EED740AA256A766C0063765C /* CommunityView.swift in Sources */,
+				EED740B2256A76A00063765C /* TrendView.swift in Sources */,
 				EE0064D42569A932005BF9F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,11 +8,11 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: CustomViewController<HomeView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        tabBarController?.navigationItem.title = "Home"
     }
 
 }

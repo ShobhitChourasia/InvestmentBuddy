@@ -13,6 +13,7 @@ class RootTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabBar()
+        setupTabBarControllers()
     }
 
 }
@@ -21,15 +22,19 @@ private typealias TabBarSetup = RootTabBarController
 private extension TabBarSetup {
     
     func setupTabBar() {
+        view.backgroundColor = .white
+    }
+    
+    func setupTabBarControllers() {
         let homeViewController = HomeViewController()
-        let homeIcon = UITabBarItem(title: "", image: UIImage(named: "home"), tag: 0)
+        let homeIcon = UITabBarItem(title: nil, image: UIImage(named: "home"), tag: 0)
         homeViewController.tabBarItem = homeIcon
         
         let exploreViewController = ExploreViewController()
         let exploreIcon = UITabBarItem(title: "", image: UIImage(named: "search"), tag: 1)
         exploreViewController.tabBarItem = exploreIcon
         
-        let trendViewController = PortfolioViewController()
+        let trendViewController = TrendViewController()
         let trendIcon = UITabBarItem(title: "", image: UIImage(named: "trend"), tag: 2)
         trendViewController.tabBarItem = trendIcon
         

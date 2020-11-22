@@ -8,11 +8,11 @@
 
 import UIKit
 
-class InsightsViewController: UIViewController {
+class InsightsViewController: CustomViewController<InsightView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .brown
+        tabBarController?.navigationItem.title = "Insight"
     }
 
 }

@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController {
+class ExploreViewController: CustomViewController<ExploreView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        tabBarController?.navigationItem.title = "Explore"
     }
 
 }
