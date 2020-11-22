@@ -12,6 +12,13 @@
 		EE0064D62569A932005BF9F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064D52569A932005BF9F0 /* ViewController.swift */; };
 		EE0064DB2569A934005BF9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0064DA2569A934005BF9F0 /* Assets.xcassets */; };
 		EE0064DE2569A934005BF9F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0064DC2569A934005BF9F0 /* LaunchScreen.storyboard */; };
+		EE0064E8256A65A3005BF9F0 /* UIViewController+CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064E7256A65A3005BF9F0 /* UIViewController+CustomView.swift */; };
+		EE0064EB256A6654005BF9F0 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064EA256A6654005BF9F0 /* RootTabBarController.swift */; };
+		EE0064F4256A6807005BF9F0 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064F3256A6807005BF9F0 /* CommunityViewController.swift */; };
+		EE0064F6256A6810005BF9F0 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064F5256A6810005BF9F0 /* ExploreViewController.swift */; };
+		EE0064F8256A6818005BF9F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064F7256A6818005BF9F0 /* HomeViewController.swift */; };
+		EE0064FA256A6820005BF9F0 /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064F9256A6820005BF9F0 /* InsightsViewController.swift */; };
+		EE0064FC256A682A005BF9F0 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064FB256A682A005BF9F0 /* PortfolioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		EE0064DA2569A934005BF9F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE0064DD2569A934005BF9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE0064DF2569A934005BF9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE0064E7256A65A3005BF9F0 /* UIViewController+CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CustomView.swift"; sourceTree = "<group>"; };
+		EE0064EA256A6654005BF9F0 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		EE0064F3256A6807005BF9F0 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
+		EE0064F5256A6810005BF9F0 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		EE0064F7256A6818005BF9F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EE0064F9256A6820005BF9F0 /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
+		EE0064FB256A682A005BF9F0 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,8 @@
 		EE0064D02569A932005BF9F0 /* InvestmentBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				EE0064E9256A6624005BF9F0 /* App Modules */,
+				EE0064E5256A6568005BF9F0 /* Utility */,
 				EE0064D12569A932005BF9F0 /* AppDelegate.swift */,
 				EE0064D32569A932005BF9F0 /* SceneDelegate.swift */,
 				EE0064D52569A932005BF9F0 /* ViewController.swift */,
@@ -62,6 +78,91 @@
 				EE0064DF2569A934005BF9F0 /* Info.plist */,
 			);
 			path = InvestmentBuddy;
+			sourceTree = "<group>";
+		};
+		EE0064E5256A6568005BF9F0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EE0064E6256A6570005BF9F0 /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EE0064E6256A6570005BF9F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE0064E7256A65A3005BF9F0 /* UIViewController+CustomView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE0064E9256A6624005BF9F0 /* App Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EE0064EC256A665C005BF9F0 /* Root TabBar */,
+				EE0064ED256A670F005BF9F0 /* App Sub Modules */,
+			);
+			path = "App Modules";
+			sourceTree = "<group>";
+		};
+		EE0064EC256A665C005BF9F0 /* Root TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EE0064EA256A6654005BF9F0 /* RootTabBarController.swift */,
+			);
+			path = "Root TabBar";
+			sourceTree = "<group>";
+		};
+		EE0064ED256A670F005BF9F0 /* App Sub Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EE0064F2256A674A005BF9F0 /* Community */,
+				EE0064EF256A672A005BF9F0 /* Explore */,
+				EE0064EE256A671E005BF9F0 /* Home */,
+				EE0064F1256A673A005BF9F0 /* Insights */,
+				EE0064F0256A6733005BF9F0 /* Portfolio */,
+			);
+			path = "App Sub Modules";
+			sourceTree = "<group>";
+		};
+		EE0064EE256A671E005BF9F0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EE0064F7256A6818005BF9F0 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EE0064EF256A672A005BF9F0 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				EE0064F5256A6810005BF9F0 /* ExploreViewController.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		EE0064F0256A6733005BF9F0 /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				EE0064FB256A682A005BF9F0 /* PortfolioViewController.swift */,
+			);
+			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		EE0064F1256A673A005BF9F0 /* Insights */ = {
+			isa = PBXGroup;
+			children = (
+				EE0064F9256A6820005BF9F0 /* InsightsViewController.swift */,
+			);
+			path = Insights;
+			sourceTree = "<group>";
+		};
+		EE0064F2256A674A005BF9F0 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				EE0064F3256A6807005BF9F0 /* CommunityViewController.swift */,
+			);
+			path = Community;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +236,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE0064D62569A932005BF9F0 /* ViewController.swift in Sources */,
+				EE0064FC256A682A005BF9F0 /* PortfolioViewController.swift in Sources */,
+				EE0064EB256A6654005BF9F0 /* RootTabBarController.swift in Sources */,
+				EE0064F4256A6807005BF9F0 /* CommunityViewController.swift in Sources */,
+				EE0064F8256A6818005BF9F0 /* HomeViewController.swift in Sources */,
 				EE0064D22569A932005BF9F0 /* AppDelegate.swift in Sources */,
+				EE0064FA256A6820005BF9F0 /* InsightsViewController.swift in Sources */,
+				EE0064E8256A65A3005BF9F0 /* UIViewController+CustomView.swift in Sources */,
+				EE0064F6256A6810005BF9F0 /* ExploreViewController.swift in Sources */,
 				EE0064D42569A932005BF9F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
