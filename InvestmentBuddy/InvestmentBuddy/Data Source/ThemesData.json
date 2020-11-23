@@ -1,0 +1,12 @@
+{
+  "themes":[
+     {
+       "title": "Diversity & Inclusion",
+       "image": "diversity"
+     },
+     {
+       "title": "Bold Biotech",
+       "image": "biotechnology"
+     }
+  ]
+}

@@ -11,8 +11,9 @@ import Parchment
 
 class ExploreView: UIView {
 
-    let homeVC = HomeViewController()
-    let trendVc = TrendViewController()
+    let categoryView = CategoryViewController()
+    let themesView = ThemesViewController()
+    let trendingView = TrendingViewController()
     
     var pagingView: PagingViewController = {
         let view = PagingViewController()
@@ -22,8 +23,13 @@ class ExploreView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        pagingView = PagingViewController(viewControllers: [homeVC,
-                                                            trendVc])
+        categoryView.title = "Category"
+        themesView.title = "Themes"
+        trendingView.title = "Trending"
+        
+        pagingView = PagingViewController(viewControllers: [categoryView,
+                                                            themesView,
+                                                            trendingView])
         pagingView.view.translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(pagingView.view)

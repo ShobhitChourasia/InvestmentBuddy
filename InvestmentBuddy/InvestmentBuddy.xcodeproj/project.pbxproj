@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,12 +18,20 @@
 		EE0064F6256A6810005BF9F0 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064F5256A6810005BF9F0 /* ExploreViewController.swift */; };
 		EE0064F8256A6818005BF9F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064F7256A6818005BF9F0 /* HomeViewController.swift */; };
 		EE0064FA256A6820005BF9F0 /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064F9256A6820005BF9F0 /* InsightsViewController.swift */; };
-		EE0064FC256A682A005BF9F0 /* TrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064FB256A682A005BF9F0 /* TrendViewController.swift */; };
+		EE0064FC256A682A005BF9F0 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0064FB256A682A005BF9F0 /* PortfolioViewController.swift */; };
 		EED740AA256A766C0063765C /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740A9256A766C0063765C /* CommunityView.swift */; };
 		EED740AC256A767F0063765C /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740AB256A767F0063765C /* ExploreView.swift */; };
 		EED740AE256A76880063765C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740AD256A76880063765C /* HomeView.swift */; };
 		EED740B0256A76940063765C /* InsightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740AF256A76940063765C /* InsightView.swift */; };
 		EED740B2256A76A00063765C /* TrendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740B1256A76A00063765C /* TrendView.swift */; };
+		EED740B7256AA7720063765C /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740B6256AA7720063765C /* ThemesViewController.swift */; };
+		EED740B9256AA78B0063765C /* ThemesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740B8256AA78B0063765C /* ThemesView.swift */; };
+		EED740BB256AA8950063765C /* ThemesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740BA256AA8950063765C /* ThemesCollectionViewCell.swift */; };
+		EED740BD256AE1130063765C /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740BC256AE1130063765C /* CategoryViewController.swift */; };
+		EED740BF256AE11D0063765C /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740BE256AE11D0063765C /* TrendingViewController.swift */; };
+		EED740C2256AE5C10063765C /* ThemesData.json in Resources */ = {isa = PBXBuildFile; fileRef = EED740C1256AE5C10063765C /* ThemesData.json */; };
+		EED740CB256AE7110063765C /* ThemesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740CA256AE7110063765C /* ThemesViewModel.swift */; };
+		EEF28B57256AF5DD0006663E /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B56256AF5DD0006663E /* Observer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,12 +50,20 @@
 		EE0064F5256A6810005BF9F0 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		EE0064F7256A6818005BF9F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EE0064F9256A6820005BF9F0 /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
-		EE0064FB256A682A005BF9F0 /* TrendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendViewController.swift; sourceTree = "<group>"; };
+		EE0064FB256A682A005BF9F0 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		EED740A9256A766C0063765C /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		EED740AB256A767F0063765C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		EED740AD256A76880063765C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EED740AF256A76940063765C /* InsightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightView.swift; sourceTree = "<group>"; };
 		EED740B1256A76A00063765C /* TrendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendView.swift; sourceTree = "<group>"; };
+		EED740B6256AA7720063765C /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
+		EED740B8256AA78B0063765C /* ThemesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesView.swift; sourceTree = "<group>"; };
+		EED740BA256AA8950063765C /* ThemesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesCollectionViewCell.swift; sourceTree = "<group>"; };
+		EED740BC256AE1130063765C /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		EED740BE256AE11D0063765C /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		EED740C1256AE5C10063765C /* ThemesData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ThemesData.json; sourceTree = "<group>"; };
+		EED740CA256AE7110063765C /* ThemesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewModel.swift; sourceTree = "<group>"; };
+		EEF28B56256AF5DD0006663E /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +84,6 @@
 				9226F3A603FA4CD189F5CF29 /* Pods-InvestmentBuddy.debug.xcconfig */,
 				5F83823D25050ACEA6A67203 /* Pods-InvestmentBuddy.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -101,7 +116,9 @@
 		EE0064D02569A932005BF9F0 /* InvestmentBuddy */ = {
 			isa = PBXGroup;
 			children = (
-				EE0064E9256A6624005BF9F0 /* App Modules */,
+				EED740C3256AE6B00063765C /* View */,
+				EED740C4256AE6D10063765C /* ViewModel */,
+				EED740C0256AE5720063765C /* Data Source */,
 				EE0064E5256A6568005BF9F0 /* Utility */,
 				EE0064D12569A932005BF9F0 /* AppDelegate.swift */,
 				EE0064D32569A932005BF9F0 /* SceneDelegate.swift */,
@@ -115,6 +132,7 @@
 		EE0064E5256A6568005BF9F0 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				EEF28B55256AF5C80006663E /* Data Passing */,
 				EE0064E6256A6570005BF9F0 /* Extensions */,
 			);
 			path = Utility;
@@ -152,7 +170,7 @@
 				EE0064EF256A672A005BF9F0 /* Explore */,
 				EE0064EE256A671E005BF9F0 /* Home */,
 				EE0064F1256A673A005BF9F0 /* Insights */,
-				EE0064F0256A6733005BF9F0 /* Trend */,
+				EE0064F0256A6733005BF9F0 /* Portfolio */,
 			);
 			path = "App Sub Modules";
 			sourceTree = "<group>";
@@ -169,19 +187,22 @@
 		EE0064EF256A672A005BF9F0 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				EED740B5256A9CA00063765C /* Trending */,
+				EED740B4256A9C970063765C /* Themes */,
+				EED740B3256A9C8C0063765C /* Category */,
 				EE0064F5256A6810005BF9F0 /* ExploreViewController.swift */,
 				EED740AB256A767F0063765C /* ExploreView.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
 		};
-		EE0064F0256A6733005BF9F0 /* Trend */ = {
+		EE0064F0256A6733005BF9F0 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
-				EE0064FB256A682A005BF9F0 /* TrendViewController.swift */,
+				EE0064FB256A682A005BF9F0 /* PortfolioViewController.swift */,
 				EED740B1256A76A00063765C /* TrendView.swift */,
 			);
-			path = Trend;
+			path = Portfolio;
 			sourceTree = "<group>";
 		};
 		EE0064F1256A673A005BF9F0 /* Insights */ = {
@@ -200,6 +221,72 @@
 				EED740A9256A766C0063765C /* CommunityView.swift */,
 			);
 			path = Community;
+			sourceTree = "<group>";
+		};
+		EED740B3256A9C8C0063765C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EED740BC256AE1130063765C /* CategoryViewController.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EED740B4256A9C970063765C /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				EED740B6256AA7720063765C /* ThemesViewController.swift */,
+				EED740B8256AA78B0063765C /* ThemesView.swift */,
+				EED740BA256AA8950063765C /* ThemesCollectionViewCell.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		EED740B5256A9CA00063765C /* Trending */ = {
+			isa = PBXGroup;
+			children = (
+				EED740BE256AE11D0063765C /* TrendingViewController.swift */,
+			);
+			path = Trending;
+			sourceTree = "<group>";
+		};
+		EED740C0256AE5720063765C /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				EED740C1256AE5C10063765C /* ThemesData.json */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		EED740C3256AE6B00063765C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE0064E9256A6624005BF9F0 /* App Modules */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EED740C4256AE6D10063765C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EED740C5256AE6E20063765C /* Themes */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EED740C5256AE6E20063765C /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				EED740CA256AE7110063765C /* ThemesViewModel.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		EEF28B55256AF5C80006663E /* Data Passing */ = {
+			isa = PBXGroup;
+			children = (
+				EEF28B56256AF5DD0006663E /* Observer.swift */,
+			);
+			path = "Data Passing";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED740C2256AE5C10063765C /* ThemesData.json in Resources */,
 				EE0064DE2569A934005BF9F0 /* LaunchScreen.storyboard in Resources */,
 				EE0064DB2569A934005BF9F0 /* Assets.xcassets in Resources */,
 			);
@@ -317,19 +405,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED740AC256A767F0063765C /* ExploreView.swift in Sources */,
-				EE0064FC256A682A005BF9F0 /* TrendViewController.swift in Sources */,
+				EE0064FC256A682A005BF9F0 /* PortfolioViewController.swift in Sources */,
 				EE0064EB256A6654005BF9F0 /* RootTabBarController.swift in Sources */,
 				EE0064F4256A6807005BF9F0 /* CommunityViewController.swift in Sources */,
+				EED740B7256AA7720063765C /* ThemesViewController.swift in Sources */,
 				EE0064F8256A6818005BF9F0 /* HomeViewController.swift in Sources */,
 				EE0064D22569A932005BF9F0 /* AppDelegate.swift in Sources */,
+				EED740BF256AE11D0063765C /* TrendingViewController.swift in Sources */,
 				EE0064FA256A6820005BF9F0 /* InsightsViewController.swift in Sources */,
 				EE0064E8256A65A3005BF9F0 /* UIViewController+CustomView.swift in Sources */,
+				EED740CB256AE7110063765C /* ThemesViewModel.swift in Sources */,
 				EE0064F6256A6810005BF9F0 /* ExploreViewController.swift in Sources */,
 				EED740AE256A76880063765C /* HomeView.swift in Sources */,
 				EED740B0256A76940063765C /* InsightView.swift in Sources */,
+				EED740B9256AA78B0063765C /* ThemesView.swift in Sources */,
 				EED740AA256A766C0063765C /* CommunityView.swift in Sources */,
 				EED740B2256A76A00063765C /* TrendView.swift in Sources */,
 				EE0064D42569A932005BF9F0 /* SceneDelegate.swift in Sources */,
+				EED740BD256AE1130063765C /* CategoryViewController.swift in Sources */,
+				EEF28B57256AF5DD0006663E /* Observer.swift in Sources */,
+				EED740BB256AA8950063765C /* ThemesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

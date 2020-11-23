@@ -1,5 +1,5 @@
 //
-//  TrendViewController.swift
+//  PortfolioViewController.swift
 //  InvestmentBuddy
 //
 //  Created by Shobhit on 22/11/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TrendViewController: CustomViewController<TrendView> {
+class PortfolioViewController: CustomViewController<PortfolioView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()

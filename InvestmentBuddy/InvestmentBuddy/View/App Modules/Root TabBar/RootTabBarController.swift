@@ -34,9 +34,9 @@ private extension TabBarSetup {
         let exploreIcon = UITabBarItem(title: "", image: UIImage(named: "search"), tag: 1)
         exploreViewController.tabBarItem = exploreIcon
         
-        let trendViewController = TrendViewController()
+        let portfolioViewController = PortfolioViewController()
         let trendIcon = UITabBarItem(title: "", image: UIImage(named: "trend"), tag: 2)
-        trendViewController.tabBarItem = trendIcon
+        portfolioViewController.tabBarItem = trendIcon
         
         let communityViewController = CommunityViewController()
         let communityIcon = UITabBarItem(title: "", image: UIImage(named: "community"), tag: 3)
@@ -46,7 +46,7 @@ private extension TabBarSetup {
         let insightIcon = UITabBarItem(title: "", image: UIImage(named: "insight"), tag: 4)
         insightViewController.tabBarItem = insightIcon
         
-        let controllers = [homeViewController, exploreViewController, trendViewController, communityViewController, insightViewController]
+        let controllers = [homeViewController, exploreViewController, portfolioViewController, communityViewController, insightViewController]
         viewControllers = controllers
     }
 }

@@ -1,5 +1,5 @@
 //
-//  TrendView.swift
+//  PortfolioView.swift
 //  InvestmentBuddy
 //
 //  Created by Shobhit on 22/11/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TrendView: UIView {
+class PortfolioView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
