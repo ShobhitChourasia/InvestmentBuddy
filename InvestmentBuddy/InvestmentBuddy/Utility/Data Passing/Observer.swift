@@ -19,7 +19,7 @@ public final class Observable<Value> {
   
   private var observers = [Observer<Value>]()
   
-  /// `maxNilObserversCount` this min number of observers without references which need to determinate in observers array for remove than. It needed that do not lost performance, as perform filter after every notify is excessively. Ths number has been choosed based on experionce and can be change in a future.
+  /// `maxNilObserversCount` this min number of observers without references which need to determine observers array for removal.
   private let maxNilObserversCount = 5
   
   public var value: Value {

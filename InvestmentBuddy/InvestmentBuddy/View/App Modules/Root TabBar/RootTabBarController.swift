@@ -14,6 +14,7 @@ class RootTabBarController: UITabBarController {
         super.viewDidLoad()
         setupTabBar()
         setupTabBarControllers()
+        customizeNavBar()
     }
 
 }
@@ -48,6 +49,22 @@ private extension TabBarSetup {
         
         let controllers = [homeViewController, exploreViewController, portfolioViewController, communityViewController, insightViewController]
         viewControllers = controllers
+    }
+    
+    func customizeNavBar() {
+        let menuButton = UIButton(type: UIButton.ButtonType.system)
+        menuButton.tintColor = .black
+        menuButton.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        menuButton.setImage(UIImage(named: "menu"), for: UIControl.State())
+        let menuBarButtonItem = UIBarButtonItem(customView: menuButton)
+        navigationItem.leftBarButtonItems = [menuBarButtonItem]
+        
+        let alertsButton = UIButton(type: UIButton.ButtonType.system)
+        alertsButton.tintColor = .black
+        alertsButton.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        alertsButton.setImage(UIImage(named: "bell"), for: UIControl.State())
+        let alertsBarButtonItem = UIBarButtonItem(customView: alertsButton)
+        navigationItem.rightBarButtonItems = [alertsBarButtonItem]
     }
 }
 

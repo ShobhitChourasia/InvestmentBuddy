@@ -38,6 +38,11 @@
 		EEF28B64256C338A0006663E /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B63256C338A0006663E /* Themes.swift */; };
 		EEF28B66256C33A60006663E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B65256C33A60006663E /* Category.swift */; };
 		EEF28B6A256C349F0006663E /* CategoryData.json in Resources */ = {isa = PBXBuildFile; fileRef = EEF28B69256C349F0006663E /* CategoryData.json */; };
+		EEF28B6C256D7A9A0006663E /* TrendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B6B256D7A9A0006663E /* TrendingView.swift */; };
+		EEF28B6E256D7AD80006663E /* TrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B6D256D7AD80006663E /* TrendingTableViewCell.swift */; };
+		EEF28B70256D80330006663E /* TrendingData.json in Resources */ = {isa = PBXBuildFile; fileRef = EEF28B6F256D80330006663E /* TrendingData.json */; };
+		EEF28B73256D840E0006663E /* Trending.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B72256D840E0006663E /* Trending.swift */; };
+		EEF28B76256D84E70006663E /* TrendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B75256D84E70006663E /* TrendingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +81,11 @@
 		EEF28B63256C338A0006663E /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		EEF28B65256C33A60006663E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		EEF28B69256C349F0006663E /* CategoryData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CategoryData.json; sourceTree = "<group>"; };
+		EEF28B6B256D7A9A0006663E /* TrendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingView.swift; sourceTree = "<group>"; };
+		EEF28B6D256D7AD80006663E /* TrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTableViewCell.swift; sourceTree = "<group>"; };
+		EEF28B6F256D80330006663E /* TrendingData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TrendingData.json; sourceTree = "<group>"; };
+		EEF28B72256D840E0006663E /* Trending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trending.swift; sourceTree = "<group>"; };
+		EEF28B75256D84E70006663E /* TrendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				EED740BE256AE11D0063765C /* TrendingViewController.swift */,
+				EEF28B6B256D7A9A0006663E /* TrendingView.swift */,
+				EEF28B6D256D7AD80006663E /* TrendingTableViewCell.swift */,
 			);
 			path = Trending;
 			sourceTree = "<group>";
@@ -269,6 +281,7 @@
 			children = (
 				EED740C1256AE5C10063765C /* ThemesData.json */,
 				EEF28B69256C349F0006663E /* CategoryData.json */,
+				EEF28B6F256D80330006663E /* TrendingData.json */,
 			);
 			path = "Data Source";
 			sourceTree = "<group>";
@@ -308,6 +321,7 @@
 		EEF28B5C256C33270006663E /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				EEF28B74256D84D80006663E /* Trending */,
 				EEF28B5D256C33310006663E /* Category */,
 				EED740C5256AE6E20063765C /* Themes */,
 			);
@@ -333,6 +347,7 @@
 		EEF28B61256C33730006663E /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				EEF28B71256D84000006663E /* Trending */,
 				EEF28B62256C337B0006663E /* Themes */,
 				EEF28B68256C33BF0006663E /* Category */,
 			);
@@ -353,6 +368,22 @@
 				EEF28B65256C33A60006663E /* Category.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		EEF28B71256D84000006663E /* Trending */ = {
+			isa = PBXGroup;
+			children = (
+				EEF28B72256D840E0006663E /* Trending.swift */,
+			);
+			path = Trending;
+			sourceTree = "<group>";
+		};
+		EEF28B74256D84D80006663E /* Trending */ = {
+			isa = PBXGroup;
+			children = (
+				EEF28B75256D84E70006663E /* TrendingViewModel.swift */,
+			);
+			path = Trending;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF28B70256D80330006663E /* TrendingData.json in Resources */,
 				EED740C2256AE5C10063765C /* ThemesData.json in Resources */,
 				EE0064DE2569A934005BF9F0 /* LaunchScreen.storyboard in Resources */,
 				EEF28B6A256C349F0006663E /* CategoryData.json in Resources */,
@@ -475,11 +507,14 @@
 				EE0064FC256A682A005BF9F0 /* PortfolioViewController.swift in Sources */,
 				EEF28B5B256C32D10006663E /* CategoryTableViewCell.swift in Sources */,
 				EE0064EB256A6654005BF9F0 /* RootTabBarController.swift in Sources */,
+				EEF28B73256D840E0006663E /* Trending.swift in Sources */,
 				EEF28B5F256C334F0006663E /* CategoryViewModel.swift in Sources */,
 				EE0064F4256A6807005BF9F0 /* CommunityViewController.swift in Sources */,
+				EEF28B76256D84E70006663E /* TrendingViewModel.swift in Sources */,
 				EED740B7256AA7720063765C /* ThemesViewController.swift in Sources */,
 				EE0064F8256A6818005BF9F0 /* HomeViewController.swift in Sources */,
 				EEF28B64256C338A0006663E /* Themes.swift in Sources */,
+				EEF28B6C256D7A9A0006663E /* TrendingView.swift in Sources */,
 				EEF28B66256C33A60006663E /* Category.swift in Sources */,
 				EE0064D22569A932005BF9F0 /* AppDelegate.swift in Sources */,
 				EED740BF256AE11D0063765C /* TrendingViewController.swift in Sources */,
@@ -494,6 +529,7 @@
 				EEF28B59256C32B40006663E /* CategoryView.swift in Sources */,
 				EED740B2256A76A00063765C /* TrendView.swift in Sources */,
 				EE0064D42569A932005BF9F0 /* SceneDelegate.swift in Sources */,
+				EEF28B6E256D7AD80006663E /* TrendingTableViewCell.swift in Sources */,
 				EED740BD256AE1130063765C /* CategoryViewController.swift in Sources */,
 				EEF28B57256AF5DD0006663E /* Observer.swift in Sources */,
 				EED740BB256AA8950063765C /* ThemesCollectionViewCell.swift in Sources */,

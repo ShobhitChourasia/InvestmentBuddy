@@ -1,0 +1,50 @@
+{
+  "trending": [
+    {
+      "header": "Top Gainers",
+      "data": [
+        {
+          "title": "Apple, Inc.",
+          "domain": "Technology",
+          "image": "apple",
+          "percentageChange": 12.23
+        },
+        {
+          "title": "Tesla, Inc.",
+          "domain": "Automobile",
+          "image": "tesla",
+          "percentageChange": 8.45
+        },
+        {
+          "title": "Slack Technologies",
+          "domain": "Work",
+          "image": "slack",
+          "percentageChange": -6.64
+        }
+      ]
+    },
+{
+      "header": "Top Sellers",
+      "data": [
+        {
+          "title": "Microsoft Corporation",
+          "domain": "Technology",
+          "image": "microsoft",
+          "percentageChange": 16.64
+        },
+        {
+          "title": "Pinterest",
+          "domain": "Technology",
+          "image": "pinterest",
+          "percentageChange": -5.0
+        },
+        {
+          "title": "Amazon, Inc.",
+          "domain": "Technology",
+          "image": "amazon",
+          "percentageChange": 9.88
+        }
+      ]
+    }
+  ]
+}

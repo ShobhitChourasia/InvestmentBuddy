@@ -7,6 +7,31 @@
      {
        "title": "Bold Biotech",
        "image": "biotechnology"
+     },
+     {
+       "title": "Clean & Green",
+       "image": "eco"
+     },
+     {
+       "title": "Crypto Central",
+       "image": "crypto_currency"
+     },
+     {
+       "title": "She runs it",
+       "image": "she"
+     },
+     {
+       "title": "Cannabis-ness",
+       "image": "green"
+     },
+     {
+       "title": "Foodie Fun",
+       "image": "food"
+     },
+     {
+       "title": "Art & Fashion",
+       "image": "fashion"
      }
+
   ]
 }

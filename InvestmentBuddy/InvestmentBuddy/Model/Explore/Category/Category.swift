@@ -6,13 +6,11 @@
 //  Copyright © 2020 Shobhit. All rights reserved.
 //
 
-import Foundation
+struct CategoryData: Decodable {
+    var categories: [Category]
+}
 
 struct Category: Decodable {
     let title: String
     let image: String
-}
-
-struct CategoryData: Decodable {
-    var categories: [Category]
 }
