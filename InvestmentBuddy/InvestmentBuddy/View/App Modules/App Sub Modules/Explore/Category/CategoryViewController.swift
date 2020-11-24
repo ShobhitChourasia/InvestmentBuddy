@@ -8,23 +8,56 @@
 
 import UIKit
 
-class CategoryViewController: UIViewController {
+class CategoryViewController: CustomViewController<CategoryView> {
 
+    var viewModel = CategoryViewModel()
+    
+    private var categories = [Category]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+        bindViewModel()
+        viewModel.getCategoryData()
+    }
 
-        // Do any additional setup after loading the view.
+}
+
+private extension CategoryViewController {
+    func bindViewModel() {
+        viewModel.category.observe(on: self) { [weak self] in self?.reloadTableView(categoryData: $0) }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func reloadTableView(categoryData: [Category]) {
+        categories = categoryData
     }
-    */
+}
 
+private typealias TableViewHelper = CategoryViewController
+extension TableViewHelper: UITableViewDataSource, UITableViewDelegate {
+    
+    func setupTableView() {
+        customView.tableView.delegate = self
+        customView.tableView.dataSource = self
+        
+        customView.tableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: "categoryCell")
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return categories.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell") as? CategoryTableViewCell else {  return UITableViewCell() }
+        cell.setData(category: categories[indexPath.row])
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 }

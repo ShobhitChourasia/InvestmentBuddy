@@ -32,6 +32,12 @@
 		EED740C2256AE5C10063765C /* ThemesData.json in Resources */ = {isa = PBXBuildFile; fileRef = EED740C1256AE5C10063765C /* ThemesData.json */; };
 		EED740CB256AE7110063765C /* ThemesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED740CA256AE7110063765C /* ThemesViewModel.swift */; };
 		EEF28B57256AF5DD0006663E /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B56256AF5DD0006663E /* Observer.swift */; };
+		EEF28B59256C32B40006663E /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B58256C32B40006663E /* CategoryView.swift */; };
+		EEF28B5B256C32D10006663E /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B5A256C32D10006663E /* CategoryTableViewCell.swift */; };
+		EEF28B5F256C334F0006663E /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B5E256C334F0006663E /* CategoryViewModel.swift */; };
+		EEF28B64256C338A0006663E /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B63256C338A0006663E /* Themes.swift */; };
+		EEF28B66256C33A60006663E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF28B65256C33A60006663E /* Category.swift */; };
+		EEF28B6A256C349F0006663E /* CategoryData.json in Resources */ = {isa = PBXBuildFile; fileRef = EEF28B69256C349F0006663E /* CategoryData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +70,12 @@
 		EED740C1256AE5C10063765C /* ThemesData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ThemesData.json; sourceTree = "<group>"; };
 		EED740CA256AE7110063765C /* ThemesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewModel.swift; sourceTree = "<group>"; };
 		EEF28B56256AF5DD0006663E /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		EEF28B58256C32B40006663E /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		EEF28B5A256C32D10006663E /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		EEF28B5E256C334F0006663E /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		EEF28B63256C338A0006663E /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		EEF28B65256C33A60006663E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		EEF28B69256C349F0006663E /* CategoryData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CategoryData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,7 @@
 		EE0064D02569A932005BF9F0 /* InvestmentBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				EEF28B60256C336C0006663E /* Model */,
 				EED740C3256AE6B00063765C /* View */,
 				EED740C4256AE6D10063765C /* ViewModel */,
 				EED740C0256AE5720063765C /* Data Source */,
@@ -227,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				EED740BC256AE1130063765C /* CategoryViewController.swift */,
+				EEF28B58256C32B40006663E /* CategoryView.swift */,
+				EEF28B5A256C32D10006663E /* CategoryTableViewCell.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -253,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				EED740C1256AE5C10063765C /* ThemesData.json */,
+				EEF28B69256C349F0006663E /* CategoryData.json */,
 			);
 			path = "Data Source";
 			sourceTree = "<group>";
@@ -268,7 +284,7 @@
 		EED740C4256AE6D10063765C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				EED740C5256AE6E20063765C /* Themes */,
+				EEF28B5C256C33270006663E /* Explore */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -287,6 +303,56 @@
 				EEF28B56256AF5DD0006663E /* Observer.swift */,
 			);
 			path = "Data Passing";
+			sourceTree = "<group>";
+		};
+		EEF28B5C256C33270006663E /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				EEF28B5D256C33310006663E /* Category */,
+				EED740C5256AE6E20063765C /* Themes */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		EEF28B5D256C33310006663E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EEF28B5E256C334F0006663E /* CategoryViewModel.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EEF28B60256C336C0006663E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEF28B61256C33730006663E /* Explore */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EEF28B61256C33730006663E /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				EEF28B62256C337B0006663E /* Themes */,
+				EEF28B68256C33BF0006663E /* Category */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		EEF28B62256C337B0006663E /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				EEF28B63256C338A0006663E /* Themes.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		EEF28B68256C33BF0006663E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EEF28B65256C33A60006663E /* Category.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +417,7 @@
 			files = (
 				EED740C2256AE5C10063765C /* ThemesData.json in Resources */,
 				EE0064DE2569A934005BF9F0 /* LaunchScreen.storyboard in Resources */,
+				EEF28B6A256C349F0006663E /* CategoryData.json in Resources */,
 				EE0064DB2569A934005BF9F0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,10 +473,14 @@
 			files = (
 				EED740AC256A767F0063765C /* ExploreView.swift in Sources */,
 				EE0064FC256A682A005BF9F0 /* PortfolioViewController.swift in Sources */,
+				EEF28B5B256C32D10006663E /* CategoryTableViewCell.swift in Sources */,
 				EE0064EB256A6654005BF9F0 /* RootTabBarController.swift in Sources */,
+				EEF28B5F256C334F0006663E /* CategoryViewModel.swift in Sources */,
 				EE0064F4256A6807005BF9F0 /* CommunityViewController.swift in Sources */,
 				EED740B7256AA7720063765C /* ThemesViewController.swift in Sources */,
 				EE0064F8256A6818005BF9F0 /* HomeViewController.swift in Sources */,
+				EEF28B64256C338A0006663E /* Themes.swift in Sources */,
+				EEF28B66256C33A60006663E /* Category.swift in Sources */,
 				EE0064D22569A932005BF9F0 /* AppDelegate.swift in Sources */,
 				EED740BF256AE11D0063765C /* TrendingViewController.swift in Sources */,
 				EE0064FA256A6820005BF9F0 /* InsightsViewController.swift in Sources */,
@@ -420,6 +491,7 @@
 				EED740B0256A76940063765C /* InsightView.swift in Sources */,
 				EED740B9256AA78B0063765C /* ThemesView.swift in Sources */,
 				EED740AA256A766C0063765C /* CommunityView.swift in Sources */,
+				EEF28B59256C32B40006663E /* CategoryView.swift in Sources */,
 				EED740B2256A76A00063765C /* TrendView.swift in Sources */,
 				EE0064D42569A932005BF9F0 /* SceneDelegate.swift in Sources */,
 				EED740BD256AE1130063765C /* CategoryViewController.swift in Sources */,

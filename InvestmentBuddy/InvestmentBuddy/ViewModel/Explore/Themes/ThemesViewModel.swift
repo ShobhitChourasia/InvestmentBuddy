@@ -32,8 +32,7 @@ class ThemesViewModel: ThemesViewModelProtocol {
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
-                let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(ThemesData.self, from: data)
+                let jsonData = try JSONDecoder().decode(ThemesData.self, from: data)
                 return jsonData.themes
             } catch {
                 print("error:\(error)")
@@ -42,14 +41,4 @@ class ThemesViewModel: ThemesViewModelProtocol {
         return nil
     }
 
-}
-
-
-struct Themes: Decodable {
-    let title: String
-    let image: String
-}
-
-struct ThemesData: Decodable {
-    var themes: [Themes]
 }

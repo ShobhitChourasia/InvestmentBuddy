@@ -1,0 +1,16 @@
+{
+  "categories":[
+     {
+       "title": "Stocks",
+       "image": "diversity"
+     },
+     {
+       "title": "ETFs",
+       "image": "biotechnology"
+     },
+     {
+       "title": "Crypto",
+       "image": "bitcoin"
+     }
+  ]
+}
